@@ -3,6 +3,7 @@
 *.pyc
 .env
 node_modules/
+frontend/
 
 .ipynb_checkpoints/
 
