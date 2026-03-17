@@ -15,7 +15,9 @@ from PIL import Image
 import tempfile
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+WINDOWS_TESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+if os.name == "nt" and os.path.exists(WINDOWS_TESSERACT_PATH):
+    pytesseract.pytesseract.tesseract_cmd = WINDOWS_TESSERACT_PATH
 app = Flask(__name__)
 CORS(app)
 
