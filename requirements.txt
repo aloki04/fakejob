@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+tensorflow
+numpy
+lime
+PyPDF2
+python-docx
+pytesseract
+Pillow
